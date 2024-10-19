@@ -1,0 +1,20 @@
+1. Initialize three counters:
+   - `length_counter = 0` (to count the total number of characters, excluding the final point)
+   - `word_counter = 1` (start at 1 because the sentence has at least one word if it's not empty)
+   - `vowel_counter = 0` (to count the vowels in the sentence)
+
+2. Read the sentence character by character.
+
+3. For each character:
+   - If the character is not a point:
+     - Increment `length_counter` by 1.
+     - If the character is a space:
+       - Increment `word_counter` by 1 (assuming each space separates words).
+     - If the character is a vowel (either lowercase or uppercase), increment `vowel_counter` by 1.
+   
+4. Stop processing once the point is reached (ignore the point character).
+
+5. Output the values of:
+   - `length_counter`
+   - `word_counter`
+   - `vowel_counter`
